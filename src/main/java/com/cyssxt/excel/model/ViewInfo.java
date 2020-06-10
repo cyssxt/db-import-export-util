@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 public class ViewInfo {
     String tableName;
     List<ExportFieldInfo> fields;
+    String title;
 
     public Map<String,ExportFieldInfo> getFieldMap(){
         return fields.stream().collect(Collectors.toMap(t->t.getName().toLowerCase().replace("_",""),t->t));

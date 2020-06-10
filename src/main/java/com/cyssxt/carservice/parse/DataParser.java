@@ -1,6 +1,5 @@
 package com.cyssxt.carservice.parse;
 
-public class DataParser {
-
-
+public interface DataParser {
+    String parse(Object object);
 }
